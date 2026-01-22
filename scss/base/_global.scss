@@ -1,0 +1,51 @@
+body {
+  font-family: $font-body;
+  color: $color-gris-claro;
+  background-color: $color-blanco;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  color: $color-gris-oscuro;
+}
+
+a {
+  color: $color-azul;
+  text-decoration: none;
+  &:hover { color: darken($color-azul, 10%); }
+}
+
+.btn-primary {
+  background-color: $color-azul;
+  border-color: $color-azul;
+  &:hover {
+    background-color: darken($color-azul, 8%);
+    border-color: darken($color-azul, 8%);
+  }
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  color: $color-blanco;
+  background-size: cover;
+  @include fade-in(1s);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+  }
+
+  > div {
+    position: relative;
+    z-index: 1;
+  }
+}

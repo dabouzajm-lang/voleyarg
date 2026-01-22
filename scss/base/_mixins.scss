@@ -1,0 +1,30 @@
+// Media queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm { @media (min-width: $bp-sm) { @content; } }
+  @else if $breakpoint == md { @media (min-width: $bp-md) { @content; } }
+  @else if $breakpoint == lg { @media (min-width: $bp-lg) { @content; } }
+  @else if $breakpoint == xl { @media (min-width: $bp-xl) { @content; } }
+}
+
+// Animaciones
+@mixin fade-in($duration: 0.6s, $ease: ease-in-out) {
+  opacity: 0;
+  animation: fadeIn $duration $ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@mixin slide-up($distance: 20px, $duration: 0.6s, $ease: ease-out) {
+  transform: translateY($distance);
+  opacity: 0;
+  animation: slideUp $duration $ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

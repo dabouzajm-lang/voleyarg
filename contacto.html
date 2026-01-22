@@ -3,48 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Vóley en Argentina</title>
 
-  <title>Contacto | Vóley en Argentina (VA)</title>
-  <meta name="description" content="Página de contacto del proyecto Vóley en Argentina (VA). Consultas generales y contacto institucional para información sobre el desarrollo del vóley argentino.">
+  <meta name="description" content="Formulario de contacto para consultas sobre vóley en Argentina: selecciones, ligas, historia y más.">
+  <meta name="keywords" content="voley, argentina, contacto, consultas, selecciones, ligas, historia">
+  <meta name="author" content="Juan Manuel da Bouza">
+  <meta name="robots" content="index, follow">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos compilados -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-<!-- NAVBAR -->
-<header class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-  <div class="container">
-
-    <a class="navbar-brand" href="index.html">VA</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand fw-bold" href="index.html">Vóley Argentina</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <nav class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-        <li class="nav-item"><a href="selecciones.html" class="nav-link">Selecciones</a></li>
-        <li class="nav-item"><a href="ligas.html" class="nav-link">Ligas</a></li>
-        <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
-        <li class="nav-item"><a href="contacto.html" class="nav-link active">Contacto</a></li>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item"><a class="nav-link" href="selecciones.html">Selecciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="ligas.html">Ligas</a></li>
+        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
       </ul>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
 <main class="py-5">
   <div class="container">
 
+    <nav aria-label="breadcrumb" class="mb-4">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+      </ol>
+    </nav>
+
     <section class="mb-5 text-center">
       <h1 class="fw-semibold mb-2">Contacto</h1>
-
-      <p class="text-muted">
-        Formulario de contacto del proyecto Vóley en Argentina (VA). Canal para consultas y solicitudes de información.
-      </p>
-
+      <p class="text-muted">Formulario de contacto del proyecto Vóley en Argentina (VA). Canal para consultas y solicitudes de información.</p>
       <small class="text-muted d-block">VA / Contacto</small>
     </section>
 
@@ -89,18 +95,18 @@
             </div>
 
             <button type="submit" class="btn btn-primary contact-btn">Enviar mensaje</button>
-
             <div class="form-text mt-2 text-muted">
               Tiempo estimado de respuesta: 24–48 h.
             </div>
+
           </form>
         </div>
       </div>
 
+      <!-- INFORMACIÓN GENERAL -->
       <div class="col-lg-5">
         <div class="contact-info-card p-4">
           <h3 class="h5 fw-semibold mb-3">Información general</h3>
-
           <ul class="list-unstyled mb-0">
             <li class="mb-2"><strong>Proyecto:</strong> Vóley en Argentina</li>
             <li class="mb-2"><strong>Sigla:</strong> VA</li>
@@ -113,13 +119,13 @@
   </div>
 </main>
 
-<footer class="py-4 border-top text-center">
-  <small class="text-muted">
-    VA — Vóley en Argentina · Proyecto de portfolio · 2026
-  </small>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center small">
+    <p class="mb-1">© 2026 Vóley en Argentina</p>
+    <p class="mb-0">Desarrollado por Juan Manuel da Bouza</p>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

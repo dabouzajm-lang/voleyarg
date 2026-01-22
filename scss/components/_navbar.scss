@@ -1,0 +1,8 @@
+.navbar {
+  background-color: $color-gris-oscuro !important;
+
+  .nav-link.active {
+    color: $color-acento !important;
+    font-weight: 600;
+  }
+}
