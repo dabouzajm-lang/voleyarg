@@ -1,10 +1,67 @@
-.card {
-  border-radius: $radius-default;
-  box-shadow: $shadow-card;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.club-card {
+  height: 320px;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+
+  transition: transform 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    transform: translateY(-6px);
   }
+}
+
+.club-overlay {
+  width: 100%;
+  padding: 1.25rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0)
+  );
+  color: white;
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+.club-upcn {
+  background-image: url("../img/clubes/upcn.jpg");
+}
+
+.club-ciudad {
+  background-image: url("../img/clubes/ciudad.jpg");
+}
+
+.club-obras {
+  background-image: url("../img/clubes/obras.jpg");
+}
+
+.club-policial {
+  background-image: url("../img/clubes/policial.jpg");
+}
+.club-boca {
+  background-image: url("../img/clubes/boca-fem.jpg");
+}
+
+.club-river {
+  background-image: url("../img/clubes/river-fem.jpg");
+}
+
+.club-sanlorenzo {
+  background-image: url("../img/clubes/sanlorenzo-fem.jpg");
+}
+
+.club-monteros {
+  background-image: url("../img/clubes/monteros-fem.jpg");
 }

@@ -146,8 +146,8 @@ a:hover {
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg: rgba(184, 214, 252, 0.7960784314);
+  --bs-body-bg-rgb: 184, 214, 252;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(33, 37, 41, 0.75);
@@ -2526,10 +2526,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px rgba(184, 214, 252, 0.7960784314), 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 1px rgba(184, 214, 252, 0.7960784314), 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -11925,14 +11925,66 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card {
-  border-radius: 0.25rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.club-card {
+  height: 320px;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.club-card:hover {
+  transform: translateY(-6px);
+}
+
+.club-overlay {
+  width: 100%;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+  color: white;
+}
+.club-overlay h3, .club-overlay .h3 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.club-overlay p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.club-upcn {
+  background-image: url("../img/clubes/upcn.jpg");
+}
+
+.club-ciudad {
+  background-image: url("../img/clubes/ciudad.jpg");
+}
+
+.club-obras {
+  background-image: url("../img/clubes/obras.jpg");
+}
+
+.club-policial {
+  background-image: url("../img/clubes/policial.jpg");
+}
+
+.club-boca {
+  background-image: url("../img/clubes/boca-fem.jpg");
+}
+
+.club-river {
+  background-image: url("../img/clubes/river-fem.jpg");
+}
+
+.club-sanlorenzo {
+  background-image: url("../img/clubes/sanlorenzo-fem.jpg");
+}
+
+.club-monteros {
+  background-image: url("../img/clubes/monteros-fem.jpg");
 }
 
 .navbar {
